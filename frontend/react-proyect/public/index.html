@@ -1,0 +1,147 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>👕GeQ Fashion</title>
+    <link rel="stylesheet" href="css/normalize.css">
+    <link href="https://fonts.googleapis.com/css2?family=Staatliches&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.1/css/bootstrap.min.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+    <link rel="stylesheet" href="css/style.css">
+</head>
+
+<body>
+    <header>
+
+        <div class="topnav">
+            <ul>
+                <li>
+                    <a href="index.html" class="active">
+                        <img class="header_logo" src="img/logo.jpg" alt="GeQ">
+                    </a>
+                </li>
+
+                <div id="myLinks">
+                    <li>
+                        <a href="nosotros.html">Nosotros</a>
+                    </li>
+                    <li>
+                        <a href="index.html">Diseños</a>
+                    </li>
+                    <li>
+                        <a href="login.html">Registrate</a>
+                    </li>
+
+                </div>
+                <a href="javascript:void(0);" class="icon" onclick="menu()">
+                    <i class="fa fa-bars"></i>
+                </a>
+            </ul>
+    </header>
+    <main class="contenedor">
+        <h1>Nosotros</h1>
+
+        <div class="nosotros">
+            <div class="nosotros_contenido">
+                <p>A través de un Diseño Personalizado. Tenemos la misión de crear experiencias que permitan conectar con el cliente y complacer los altos gustos en la gama de diseño de la moda. Nos complace realzar la belleza de cada ser humano y a su vez
+                    generar confianza y comodidad.</p>
+
+                <p> Los invitamos a comprar en nuestra tienda on-line, nos caracterizamos por la calidad del producto y un eficiente servicio.
+                </p>
+                <div id="myCarousel" class="carousel slide" data-ride="carousel">
+                    <ol class="carousel-indicators">
+                        <li data-target="#myCarousel" data-slide-to="0" class="active"></li>
+                        <li data-target="#myCarousel" data-slide-to="1"></li>
+                        <li data-target="#myCarousel" data-slide-to="2"></li>
+                        <li data-target="#myCarousel" data-slide-to="3"></li>
+                    </ol>
+
+                    <div class="carousel-inner" role="listbox">
+                        <div class="item active">
+                            <img src="img/Estampar.jpg" alt="Estampado">
+                            <div class="carousel-caption">
+
+                            </div>
+                        </div>
+
+                        <div class="item">
+                            <img src="img/paraEstampar.jpg" alt="Diseños">
+                            <div class="carousel-caption">
+                                <h4>Elige tu diseño</h4>
+
+                            </div>
+                        </div>
+
+                        <div class="item">
+                            <img src="img/remeras-para-sublimar.png" alt="Remeras">
+                            <div class="carousel-caption">
+                                <h3>Diseños a tu medida</h3>
+                                <p>Descubre diferentes colores y envianos tu diseño.</p>
+                            </div>
+                        </div>
+
+                    </div>
+                    <a class="left carousel-control" href="#myCarousel" role="button" data-slide="prev">
+                        <span class="glyphicon glyphicon-chevron-left" aria-hidden="true"></span>
+                        <span class="sr-only">Anterior</span>
+                    </a>
+                    <a class="right carousel-control" href="#myCarousel" role="button" data-slide="next">
+                        <span class="glyphicon glyphicon-chevron-right" aria-hidden="true"></span>
+                        <span class="sr-only">Siguiente</span>
+                    </a>
+                </div>
+            </div>
+            <img class="nosotros_imagen" src="img/principal.jpg" alt="imagen nosotros">
+        </div>
+    </main>
+
+    <section class="contenedor comprar">
+        <h2 class="comprar_titulo">¿Porqué Comprar con nosotros?</h2>
+
+        <div class="bloques">
+            <div class="bloque">
+                <img class="bloque_imagen" src="img/pago-seguro.png" alt="porque comprar">
+                <h3 class="bloque_titulo">Pago 100% seguro!</h3>
+                <p>El método de pago, lo eliges vos!, aceptamos cualquier tarjeta de crédito o débito.</p>
+            </div>
+
+            <div class="bloque">
+                <img class="bloque_imagen" src="img/envio.png" alt="porque comprar">
+                <h3 class="bloque_titulo">Envío Gratis</h3>
+                <p>Optimo y seguro, envio 100% garantizado</p>
+            </div>
+
+            <div class="bloque">
+                <img class="bloque_imagen" src="img/calidad.png" alt="porque comprar">
+                <h3 class="bloque_titulo">La Mejor Calidad</h3>
+                <p>Te ofrecemos un servicio de calidad</p>
+            </div>
+
+            <div class="bloque">
+                <img class="bloque_imagen" src="img/24horas.png" alt="porque comprar">
+                <h3 class="bloque_titulo">Servicio 24 hrs.</h3>
+                <p>Te brindamos la atención que te mereces, estamos para vos siempre!</p>
+            </div>
+        </div>
+    </section>
+
+    <footer class="footer">
+        <p class="footer_texto">❤️ GeQ ❤️ Fashion 🏷- Todos los derechos Reservados 2022.</p>
+    </footer>
+    <script>
+        function menu() {
+            const myMenu = document.getElementById("myLinks");
+            if (myMenu.style.display === "block") {
+                myMenu.style.display = "none";
+            } else {
+                myMenu.style.display = "block";
+            }
+        }
+    </script>
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
+    <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.1/js/bootstrap.min.js"></script>
+</body>
+
+</html>

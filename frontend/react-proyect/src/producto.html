@@ -1,0 +1,84 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>👕GeQ Fashion</title>
+    <link rel="stylesheet" href="css/normalize.css">
+    <link href="https://fonts.googleapis.com/css2?family=Staatliches&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.1/css/bootstrap.min.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+    <link rel="stylesheet" href="css/style.css">
+
+</head>
+
+<body>
+    <header>
+
+        <div class="topnav">
+            <ul>
+                <li>
+                    <a href="index.html" class="active">
+                        <img class="header_logo" src="img/logo.jpg" alt="GeQ">
+                    </a>
+                </li>
+
+                <div id="myLinks">
+                    <li>
+                        <a href="nosotros.html">Nosotros</a>
+                    </li>
+                    <li>
+                        <a href="index.html">Diseños</a>
+                    </li>
+                    <li>
+                        <a href="login.html">Registrate</a>
+                    </li>
+
+                </div>
+                <a href="javascript:void(0);" class="icon" onclick="menu()">
+                    <i class="fa fa-bars"></i>
+                </a>
+            </ul>
+    </header>
+    <main class="contenedor">
+        <div class="camisa">
+            <img class="camisa_imagen" src="img/shoes.jpg" alt="Imagen del Producto">
+
+            <div class="camisa_contenido">
+                <br>
+                <p>Excelente diseño que se adapta a tu cuerpo con una tela tan suave como el algodón.</p>
+
+                </br>
+
+                <form class="formulario">
+                    <select class="formulario_campo">
+                        <option disabled selected>-- Seleccionar Talla --</option>
+                        <option>Chica</option>
+                        <option>Mediana</option>
+                        <option>Grande</option>
+                    </select>
+                    <input class="formulario_campo" type="number" placeholder="Cantidad" min="1">
+
+                    <input class="formulario_submit" type="submit" onclick="addProduct()" name="guardar" id="guardar" value="Agregar al Carrito">
+
+                    <input class="formulario_submit" type="submit" onclick="deleteData()" name="limpiar" id="limpiar" value="Limpiar Vista">
+
+                    <input class="formulario_submit" type="submit" onclick="deleteAll()" name="borrar" id="borrar" value="Borrar todo">
+
+                    <p id="datosDisponibles">No hay información almacenada</p>
+                </form>
+            </div>
+        </div>
+    </main>
+
+    <footer class="footer">
+        <p class="footer_texto">❤️ GeQ ❤️ Fashion 🏷- Todos los derechos Reservados 2022.</p>
+    </footer>
+    <script src="/frontend/index.js"></script>
+    <script src="/frontend/producto.json"></script>
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
+    <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.1/js/bootstrap.min.js"></script>
+</body>
+
+</html>

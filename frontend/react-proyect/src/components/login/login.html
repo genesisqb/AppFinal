@@ -1,0 +1,84 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>👕GeQ Fashion</title>
+    <link href="https://fonts.googleapis.com/css2?family=Roboto:ital,wght@0,100;0,300;0,400;0,500;0,700;0,900;1,100;1,300;1,400;1,500;1,700;1,900&display=swap" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css2?family=Staatliches&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+    <link rel="stylesheet" href="css/login.css">
+    <link rel="stylesheet" href="css/style.css">
+</head>
+
+<body>
+    <header>
+
+        <div class="topnav">
+            <ul>
+                <li>
+                    <a href="index.html" class="active">
+                        <img class="header_logo" src="img/logo.jpg" alt="GeQ">
+                    </a>
+                </li>
+
+                <div id="myLinks">
+                    <li>
+                        <a href="nosotros.html">Nosotros</a>
+                    </li>
+                    <li>
+                        <a href="index.html">Diseños</a>
+                    </li>
+                    <li>
+                        <a href="login.html">Registrate</a>
+                    </li>
+
+                </div>
+                <a href="javascript:void(0);" class="icon" onclick="menu()">
+                    <i class="fa fa-bars"></i>
+                </a>
+            </ul>
+    </header>
+    <main>
+        <div>
+            <div>
+                <div>
+                    <h3>¿Ya tienes una cuenta?</h3>
+                    <p>Inicia sesión para entrar en la página</p>
+                    <button id="btn_iniciar-sesion">Iniciar Sesión</button>
+                </div>
+                <div class="caja_trasera-register">
+                    <h3>¿Aún no tienes una cuenta?</h3>
+                    <p>Regístrate para que puedas iniciar sesión</p>
+                    <button id="btn_registrarse">Regístrarse</button>
+                </div>
+            </div>
+
+            <div class="contenedor_login-register">
+
+                <form action="" class="formulario_login">
+                    <h2>Iniciar Sesión</h2>
+                    <input type="text" placeholder="Correo Electronico">
+                    <input type="password" placeholder="Contraseña">
+                    <button>Entrar</button>
+                </form>
+
+                <form action="" class="formulario_register">
+                    <h2>Regístrarse</h2>
+                    <input id="name" type="text" onclick="formularioRegister()" placeholder="Nombre completo">
+                    <input id="email" type="email" onclick="formularioRegister()" placeholder="Correo Electronico">
+                    <input id="user" type="text" onclick="formularioRegister()" placeholder="Usuario">
+                    <input id="password" type="password" onclick="formularioRegister()" placeholder="Contraseña">
+                    <button>Regístrarse</button>
+                </form>
+            </div>
+        </div>
+
+    </main>
+    <script src="login.js"></script>
+    <script src="index.js"></script>
+</body>
+
+
+</html>
